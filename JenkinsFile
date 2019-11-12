@@ -6,13 +6,13 @@ agent any
 
   stage('Install npm...'){
         steps{
-        sh 'npm install --unsafe-perm'
+        bat 'npm install --unsafe-perm'
         }
     }
 
   stage('Run Cypress...'){
         steps{
-        sh 'npx cypress run'
+        bat 'npx cypress run'
         }
     }
 
